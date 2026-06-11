@@ -11,7 +11,7 @@ const Navbar = () => {
 
         {/* Logo */}
         {/* <h3 className="text-2xl font-bold text-white">Realtor</h3> */}
-        <img src={logo} className="h-11"/>
+        <img src={logo} className="h-8"/>
 
         {/* Desktop Menu */}
         <div className="desktop-nav gap-2 items-center">
