@@ -6,7 +6,7 @@ import Hero from './components/Hero.jsx'
 import Navbar from './components/Navbar.jsx'
 import './index.css'
 import './App.css'
-
+import HowItWorks from './components/HowItWorks.jsx'
 import { AICallCard } from './components/AiCallCard.jsx'
 import ContactFormCard from './components/LiveDemo.jsx'
 import Integrations from './components/Integrations.jsx'
@@ -22,7 +22,7 @@ function App() {
     <Hero/>
     <AICallCard/>
     <ContactFormCard/>
-
+    <HowItWorks/>
     <Integrations/>
     <Footer/>
     
