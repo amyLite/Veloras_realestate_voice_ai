@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+.bg-blue {color:#4e46e5}
+.text-blue-600 { color: rgb(37, 99, 235) } /* Instead of oklch */
+.bg-gray-200 { background-color: #e5e7eb } /* Instead of oklch */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page-break {
+  page-break-before: always;
+}
+
+.avoid-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
+.mobile-menu {
+  display: block;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-open {
+  max-height: 500px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+/* Hide mobile menu on desktop */
+@media (min-width: 1024px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.marquee {
+  width: max-content;
+  animation: marquee 30s linear infinite;
+  }
+  
+  .marquee-reverse {
+  width: max-content;
+  animation: marqueeReverse 30s linear infinite;
+  }
+  
+  @keyframes marquee {
+  from {
+  transform: translateX(0%);
+  }
+  
+  to {
+  transform: translateX(-50%);
+  }
+  }
+  
+  @keyframes marqueeReverse {
+  from {
+  transform: translateX(-50%);
+  }
+  
+  to {
+  transform: translateX(0%);
+  }
+  }
+  
+
+.how-it-works-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.card {
+  width: 420px;
+  min-height: 550px;
+}
+
+@media (max-width: 1024px) {
+  .how-it-works-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#root {
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.navtext {
+  font-size: 0.94em;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
