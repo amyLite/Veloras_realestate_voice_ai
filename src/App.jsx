@@ -11,6 +11,7 @@ import { AICallCard } from './components/AiCallCard.jsx'
 import ContactFormCard from './components/LiveDemo.jsx'
 import Integrations from './components/Integrations.jsx'
 import Footer from './components/Footer.jsx'
+import AudioPlayBox from './components/AudioPlay.jsx'
 
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
     <>
     <Navbar/>
     <Hero/>
+    <AudioPlayBox/>
     <AICallCard/>
-    <ContactFormCard/>
     <HowItWorks/>
     <Integrations/>
     <Footer/>

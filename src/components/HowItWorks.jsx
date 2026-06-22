@@ -1,6 +1,6 @@
 export default function HowItWorks() {
     return (
-      <section id="howitworks" className="py-20 px-6">
+      <section id="howitworks" className="py-20 px-6 pt-35">
         <div>
           <h1 className="text-4xl font-bold text-white justify-center"> Four Steps, Thats it.</h1>
                   {/* Under line */}
