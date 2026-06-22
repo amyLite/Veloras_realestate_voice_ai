@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div>
       {/* CHANGED: Adjusted responsive padding (py-12 to py-24) */}
-      <section className="relative flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 py-12 md:py-24 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 py-12 md:py-20 overflow-hidden">
         
         {/* Badge - CHANGED: Ensured inline-block so it wraps beautifully */}
         <p className="mt-3 mb-3 px-4 py-1 inline-block text-gray-100 max-w-xl text-xs sm:text-sm bg-gradient-to-r from-gray-800 to-gray-600 border border-cyan-500 rounded-xl tracking-wider font-semibold">
